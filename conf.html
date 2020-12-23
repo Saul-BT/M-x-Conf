@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>M-x CONF #1</title>
+<meta name="author" content="(Saúl Blanco Tejero (@elGolpista))"/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@3.9.2/css/reveal.css"/>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@3.9.2/css/theme/league.css" id="theme"/>
+
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = 'https://cdn.jsdelivr.net/npm/reveal.js@3.9.2/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide" data-background="img/emacs-logo.png" data-background-size="700px" data-background-opacity="0.2"><h1 class="title">M-x CONF #1</h1><h2 class="author">Saúl Blanco Tejero (@elGolpista)</h2>
+</section>
+
+<section>
+<section id="slide-orgec2478e">
+<h2 id="orgec2478e">¿Qué es?</h2>
+<div class="outline-text-2" id="text-orgec2478e">
+</div>
+</section>
+<section id="slide-orga31b38c">
+<h3 id="orga31b38c">Editor de texto</h3>
+</section>
+<section id="slide-orgbd3f0ea">
+<h3 id="orgbd3f0ea">Cliente de correo</h3>
+</section>
+<section id="slide-org30a05de">
+<h3 id="org30a05de">Navegador web</h3>
+</section>
+<section id="slide-org569f0a2">
+<h3 id="org569f0a2">Organizador de tareas</h3>
+</section>
+<section id="slide-org698c259">
+<h3 id="org698c259">&#x2026;</h3>
+</section>
+<section id="slide-orgacd5baf">
+<h3 id="orgacd5baf">Sistema Operativo?</h3>
+<div class="outline-text-3" id="text-orgacd5baf">
+</div>
+</section>
+<section id="slide-org0d91728" data-background="img/lisp-parens.png" data-background-size="80px" data-background-repeat="repeat" data-background-opacity="0.03">
+<h4 id="org0d91728">No, pero casi 😅</h4>
+<p>
+Según GNU, es un editor de texto libre, multiplataforma, flexible y personalizable.
+</p>
+
+<p>
+Que en su interior tiene un intérprete de Emacs Lisp.
+</p>
+
+</section>
+</section>
+<section>
+<section id="slide-org6fd1d4c">
+<h2 id="org6fd1d4c">Partes</h2>
+<div class="outline-text-2" id="text-org6fd1d4c">
+</div>
+</section>
+<section id="slide-orgf8b4165" data-background="img/frame.png" data-background-size="800px">
+<h3 id="orgf8b4165">Frame</h3>
+
+</section>
+<section id="slide-org9f422b6" data-background="img/window.png" data-background-size="800px">
+<h3 id="org9f422b6">Window</h3>
+
+</section>
+<section id="slide-org79743bb" data-background="img/buffer.png" data-background-size="800px">
+<h3 id="org79743bb">Buffer</h3>
+
+</section>
+</section>
+<section>
+<section id="slide-org992e1cc">
+<h2 id="org992e1cc">Modos</h2>
+<div class="outline-text-2" id="text-org992e1cc">
+</div>
+</section>
+<section id="slide-org3b869bc">
+<h3 id="org3b869bc">Mayores</h3>
+</section>
+<section id="slide-org12dfef7">
+<h3 id="org12dfef7">Menores</h3>
+
+</section>
+</section>
+<section>
+<section id="slide-orgc489c3b">
+<h2 id="orgc489c3b">Comandos básicos</h2>
+<div class="outline-text-2" id="text-orgc489c3b">
+</div>
+</section>
+<section id="slide-org4f3e731">
+<h3 id="org4f3e731">Creación</h3>
+<div class="outline-text-3" id="text-org4f3e731">
+</div>
+</section>
+<section id="slide-orge58f50d">
+<h4 id="orge58f50d">Frames</h4>
+<p>
+<code>C-x 5 2</code>
+</p>
+
+</section>
+<section id="slide-org0385dae">
+<h4 id="org0385dae">Windows</h4>
+<p>
+División horizontal: <code>C-x 2</code>
+</p>
+
+<p>
+División vertical: <code>C-x 3</code>
+</p>
+
+</section>
+<section id="slide-org1d521ab">
+<h4 id="org1d521ab">Buffers</h4>
+<p>
+<code>C-x b</code>
+</p>
+
+</section>
+<section id="slide-org1323d63">
+<h3 id="org1323d63">Desplazamiento</h3>
+<div class="outline-text-3" id="text-org1323d63">
+</div>
+</section>
+<section id="slide-org890cf06">
+<h4 id="org890cf06">Frames</h4>
+<p>
+<code>C-x 5 o</code>
+</p>
+
+</section>
+<section id="slide-orgbad8c0e">
+<h4 id="orgbad8c0e">Windows</h4>
+<p>
+<code>C-x o</code>
+</p>
+
+</section>
+<section id="slide-orgf7f0193">
+<h4 id="orgf7f0193">Buffers</h4>
+<p>
+<code>C-x &lt;right&gt;</code>
+</p>
+
+<p>
+<code>C-x &lt;left&gt;</code>
+</p>
+
+</section>
+<section id="slide-org97f934a">
+<h3 id="org97f934a">Edicción de texto</h3>
+</section>
+<section id="slide-org379fe9e">
+<h3 id="org379fe9e">Portapapeles</h3>
+
+</section>
+</section>
+<section>
+<section id="slide-orgace92dd">
+<h2 id="orgace92dd">Paquetes y configuración</h2>
+</section>
+</section>
+<section>
+<section id="slide-org2a4df06">
+<h2 id="org2a4df06">Macros</h2>
+</section>
+</section>
+<section>
+<section id="slide-orgaa180a4">
+<h2 id="orgaa180a4">Más aún</h2>
+<div class="outline-text-2" id="text-orgaa180a4">
+</div>
+</section>
+<section id="slide-orgec9490e">
+<h3 id="orgec9490e"><a href="https://orgmode.org/">Org mode (Organize)</a></h3>
+<div class="outline-text-3" id="text-orgec9490e">
+</div>
+</section>
+<section id="slide-org08cd91b">
+<h4 id="org08cd91b">Para organizar tu día a día</h4>
+</section>
+<section id="slide-org9c74901">
+<h4 id="org9c74901">Para crear documentos</h4>
+</section>
+<section id="slide-org77635c1">
+<h4 id="org77635c1">Para programación literaria</h4>
+
+</section>
+<section id="slide-org2dd6c91">
+<h3 id="org2dd6c91">Magit</h3>
+
+</section>
+</section>
+<section>
+<section id="slide-orgc3e8ba9">
+<h2 id="orgc3e8ba9">¿Es el final?</h2>
+<div class="outline-text-2" id="text-orgc3e8ba9">
+</div>
+</section>
+<section id="slide-orgc532b7a">
+<h3 id="orgc532b7a">Otros enlaces de Interés</h3>
+<div class="outline-text-3" id="text-orgc532b7a">
+</div>
+</section>
+<section id="slide-org50e6427">
+<h4 id="org50e6427">Distribuciones</h4>
+</section>
+<section id="slide-orge5e656a" data-background="img/doom-emacs.png" data-background-opacity="0.4">
+<h4 id="orge5e656a"><a href="https://github.com/hlissner/doom-emacs">Doom Emacs</a></h4>
+<p>
+Configuración que tiene en mente a los Veteranos.
+</p>
+
+<p>
+Aporta estabilidad, poco distanciamiento de Emacs puro, y una serie de utilidades que ayudan a administrar diferentes aspectos del editor.
+</p>
+
+</section>
+<section id="slide-orgbf905c9" data-background="img/spacemacs.png" data-background-opacity="0.4">
+<h4 id="orgbf905c9"><a href="https://www.spacemacs.org/">Spacemacs</a></h4>
+<p>
+Una nueva forma de experimentar Emacs, una configuración sofisticada y pulida enfocada en <b>Ergonomía</b>, <b>Mnemónicos</b> y consistencia.
+</p>
+
+</section>
+<section id="slide-org61ebc81" data-background="img/centaur-emacs.png" data-background-opacity="0.4">
+<h4 id="org61ebc81"><a href="https://seagle0128.github.io/.emacs.d/">Centaur Emacs</a></h4>
+<p>
+Esta es una distribución tiene como objetivo mejorar la experiencia predeterminada de Emacs.
+</p>
+
+<p>
+Altera muchas de las configuraciones predeterminadas para que sea fácil de usar para los Novatos, y ofrecer potencia a los Veteranos.
+</p>
+
+</section>
+<section id="slide-orge1a21cc" data-background="img/emacs-nano.png" data-background-opacity="0.4">
+<h4 id="orge1a21cc"><a href="https://github.com/rougier/nano-emacs">N Λ N O</a></h4>
+<p>
+Proporciona un aspecto y una sensación agradable y consistente.
+</p>
+
+<p>
+La filosofía de Nano Emacs es mantener el comportamiento de Emacs puro sin introducir demasiadas dependencias (o ninguna si es posible) y sigua siendo modular.
+</p>
+
+</section>
+<section id="slide-orge2ae6a4">
+<h4 id="orge2ae6a4">Comunidad</h4>
+<p>
+Wikis: <a href="https://www.emacswiki.org/">EmacsWiki</a> / <a href="https://wikemacs.org">WikiEmacs</a>
+</p>
+
+<p>
+Grupos de Telegram: <a href="https://t.me/emacs_es">Español</a> / <a href="https://t.me/emacs_en">Inglés</a>
+</p>
+
+<p>
+Freenode: #emacs
+</p>
+
+<p>
+<a href="https://www.reddit.com/r/emacs/">Subreddit</a>
+</p>
+</section>
+</section>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@3.9.2/js/reveal.js"></script>
+
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+multiplex: {
+    secret: '', // null if client
+    id: '', // id, obtained from socket.io server
+    url: '' // Location of socket.io server
+},
+
+// Optional libraries used to extend on reveal.js
+dependencies: [
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js@3.9.2/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js@3.9.2/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js@3.9.2/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js@3.9.2/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js@3.9.2/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
+});
+</script>
+</body>
+</html>

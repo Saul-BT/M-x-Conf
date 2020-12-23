@@ -1,0 +1,134 @@
+#+TITLE: M-x CONF #1
+#+AUTHOR: Saúl Blanco Tejero (@elGolpista)
+#+OPTIONS: toc:nil num:nil timestamp:nil
+#+latex_header: \hypersetup{colorlinks=true,linkcolor=blue}
+
+#+REVEAL_THEME: league
+#+REVEAL_TITLE_SLIDE_BACKGROUND: img/emacs-logo.png
+#+REVEAL_TITLE_SLIDE_BACKGROUND_SIZE: 700px
+#+REVEAL_TITLE_SLIDE_BACKGROUND_OPACITY: 0.2
+
+* ¿Qué es?
+** Editor de texto
+** Cliente de correo
+** Navegador web
+** Organizador de tareas
+** ...
+** Sistema Operativo?
+*** No, pero casi 😅
+   :PROPERTIES:
+   :reveal_background: img/lisp-parens.png
+   :reveal_background_size: 80px
+   :reveal_background_repeat: repeat
+   :reveal_background_opacity: 0.03
+   :END:
+    Según GNU, es un editor de texto libre, multiplataforma, flexible y personalizable.
+
+    Que en su interior tiene un intérprete de Emacs Lisp.
+
+* Partes
+** Frame
+   :PROPERTIES:
+   :reveal_background: img/frame.png
+   :reveal_background_size: 800px
+   :END:
+
+** Window
+   :PROPERTIES:
+   :reveal_background: img/window.png
+   :reveal_background_size: 800px
+   :END:
+
+** Buffer
+   :PROPERTIES:
+   :reveal_background: img/buffer.png
+   :reveal_background_size: 800px
+   :END:
+
+* Modos
+** Mayores
+** Menores
+
+* Comandos básicos
+** Creación
+*** Frames
+    =C-x 5 2=
+
+*** Windows
+    División horizontal: =C-x 2=
+
+    División vertical: =C-x 3=
+
+*** Buffers
+    =C-x b=
+
+** Desplazamiento
+*** Frames
+    =C-x 5 o=
+
+*** Windows
+    =C-x o=
+
+*** Buffers
+    =C-x <right>=
+
+    =C-x <left>=
+
+** Edicción de texto
+** Portapapeles
+
+* Paquetes y configuración
+* Macros
+* Más aún
+** [[https://orgmode.org/][Org mode (Organize)]]
+*** Para organizar tu día a día
+*** Para crear documentos
+*** Para programación literaria
+
+** Magit
+
+* ¿Es el final?
+** Otros enlaces de Interés
+*** Distribuciones
+*** [[https://github.com/hlissner/doom-emacs][Doom Emacs]]
+   :PROPERTIES:
+   :reveal_background: img/doom-emacs.png
+   :reveal_background_opacity: 0.4
+   :END:
+   Configuración que tiene en mente a los Veteranos.
+
+   Aporta estabilidad, poco distanciamiento de Emacs puro, y una serie de utilidades que ayudan a administrar diferentes aspectos del editor.
+
+*** [[https://www.spacemacs.org/][Spacemacs]]
+   :PROPERTIES:
+   :reveal_background: img/spacemacs.png
+   :reveal_background_opacity: 0.4
+   :END:
+   Una nueva forma de experimentar Emacs, una configuración sofisticada y pulida enfocada en *Ergonomía*, *Mnemónicos* y consistencia.
+
+*** [[https://seagle0128.github.io/.emacs.d/][Centaur Emacs]]
+   :PROPERTIES:
+   :reveal_background: img/centaur-emacs.png
+   :reveal_background_opacity: 0.4
+   :END:
+   Esta es una distribución tiene como objetivo mejorar la experiencia predeterminada de Emacs.
+   
+   Altera muchas de las configuraciones predeterminadas para que sea fácil de usar para los Novatos, y ofrecer potencia a los Veteranos.
+
+*** [[https://github.com/rougier/nano-emacs][N Λ N O]]
+   :PROPERTIES:
+   :reveal_background: img/emacs-nano.png
+   :reveal_background_opacity: 0.4
+   :END:
+   Proporciona un aspecto y una sensación agradable y consistente.
+
+   La filosofía de Nano Emacs es mantener el comportamiento de Emacs puro sin introducir demasiadas dependencias (o ninguna si es posible) y sigua siendo modular.
+
+*** Comunidad
+   Wikis: [[https://www.emacswiki.org/][EmacsWiki]] / [[https://wikemacs.org][WikiEmacs]]
+
+   Grupos de Telegram: [[https://t.me/emacs_es][Español]] / [[https://t.me/emacs_en][Inglés]]
+
+   Freenode: #emacs
+
+      [[https://www.reddit.com/r/emacs/][Subreddit]]
