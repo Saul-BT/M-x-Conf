@@ -74,7 +74,7 @@
 
     =C-x <left>=
 
-** Edicción de texto
+** Edición de texto
 ** Portapapeles
 
 * Paquetes y configuración
@@ -122,10 +122,10 @@
    :END:
    Proporciona un aspecto y una sensación agradable y consistente.
 
-   La filosofía de Nano Emacs es mantener el comportamiento de Emacs puro sin introducir demasiadas dependencias (o ninguna si es posible) y sigua siendo modular.
+   La filosofía de Nano Emacs es mantener el comportamiento de Emacs puro sin introducir demasiadas dependencias (o ninguna si es posible) y siga siendo modular.
 
 *** Comunidad
-   Wikis: [[https://www.emacswiki.org/][EmacsWiki]] / [[https://wikemacs.org][WikiEmacs]]
+   Wikis: [[https://www.emacswiki.org/][EmacsWiki]] / [[https://wikemacs.org][WikEmacs]]
 
    Grupos de Telegram: [[https://t.me/emacs_es][Español]] / [[https://t.me/emacs_en][Inglés]]
 
