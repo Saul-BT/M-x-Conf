@@ -1,2 +1,2 @@
 * M-x CONF
-Recursos de la charla/taller.
+Recursos de la [[https://youtu.be/A3ITVuBdatE][charla/taller (enlace al vídeo)]].
